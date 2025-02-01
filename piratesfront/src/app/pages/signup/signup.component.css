@@ -1,0 +1,41 @@
+.full-width{
+  width: 80%;
+}
+.signup_link{
+  margin: 10px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+
+}
+.signup_link a{
+  color: #2691d9;
+  text-decoration: none;
+}
+.signup_link a:hover{
+  text-decoration: underline;
+}
+.ml120{
+  margin-left: 120px;
+}
+
+.image{
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  color: black;
+  font-size: 40px;
+}
+span{
+  color: #ff6347;
+}
+mat-card{
+  box-shadow: 10px 10px 15px #a72121;
+}
+.mtb40{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}

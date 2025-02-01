@@ -1,0 +1,39 @@
+.card2{
+    width: 100%;
+    /* margin-left: 2%; */
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-image: linear-gradient(rgba(218, 206, 206, 0.644), rgba(212, 204, 204, 0.7) , rgba(214, 185, 185, 0.7) ,rgba(209, 194, 194, 0.7));
+}
+h3{
+   font: bold;
+   font-size:large;
+   font-weight:500;
+}
+.example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: flex-start;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }
+
+  .table{
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+.table tr{
+    border: 1px solid black;
+}
+.table tr td{
+    padding: 15px 10px;
+    border: .5px solid #03030365;
+    font-size: medium;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}

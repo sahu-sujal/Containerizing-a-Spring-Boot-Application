@@ -1,0 +1,50 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-6 offset-md-3  text-center">
+                <mat-card class="shadow mt20 mb50">
+                    <div class="container image">
+                        <h1 class="logo mt20">Welcome <span>Pirates</span></h1>
+                    </div>
+
+                    <h1 class="text-center mt20"> </h1>
+
+                    <!-- {{loginData | json}} -->
+
+                    <form (ngSubmit)="formSubmit()">
+                        <!--Username-->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Username</mat-label>
+                            <input [(ngModel)]="loginData.username" name="username" matInput placeholder="Enter Here" required />
+                            <mat-hint>Enter Valid Username</mat-hint>
+                        </mat-form-field>
+
+                        <!--password-->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input [(ngModel)]="loginData.password" name="Password" type="password" matInput placeholder="Enter Here" required />
+                        </mat-form-field>
+
+                        <div class="container text-center">
+                            <button type="submit" mat-raised-button color="primary" >
+                                Login
+                            </button>
+                            <button type="reset" (click)="clearanimation()" mat-raised-button color="primary" class="ml120">
+                                Clear
+                            </button>
+                        </div>
+                
+                        <div class="signup_link mt20">
+                            <h1>Login Here</h1>
+                        </div>
+
+                        <div class="signup_link">
+                            <h3>Not a member? <a  [routerLink]="'/signup'">Signup</a></h3>
+                        </div>
+
+                    </form>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

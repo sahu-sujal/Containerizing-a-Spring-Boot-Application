@@ -1,0 +1,11 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.color{
+  background-color: black;
+  box-shadow: 10px 10px 15px #a72121;
+}
+span{
+  color: #ff6347;
+}

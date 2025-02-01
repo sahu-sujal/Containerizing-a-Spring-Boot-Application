@@ -1,0 +1,27 @@
+<mat-card class="card">
+    <mat-card-title class="head">Title <span>Category</span> </mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-accordion>
+    <mat-expansion-panel class="panel" (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+        *ngFor="let a of Article">
+
+        <mat-expansion-panel-header>
+            <!-- {{a.qid | json}} -->
+            <mat-panel-title> <img src="../../../../assets/Profile/article.png" width="35px" height="35px" class="mr20">
+                {{a.title}} </mat-panel-title>
+            <mat-panel-description class="mr20 category"> {{a.category.title}} </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-panel-description class="description">Description:- {{ a.description}} </mat-panel-description>
+        <mat-divider></mat-divider>
+        <div [innerHTML]="a.article" class="mt20 mb20" style="white-space: pre-wrap"></div>
+        <mat-divider></mat-divider>
+        <button mat-raised-button class="btn" color="primary" [routerLink]="'/admin/view-questions/'+a.qid+'/'+a.title">Questions</button>
+        <button mat-stroked-button class="btn" color="primary"> Maximun Marks :{{a.maxMarks}}</button>
+        <button mat-stroked-button class="btn" color="primary"> Questions :{{a.numberOfQuestions}}</button>
+        <button mat-raised-button class="btn" color="primary" [routerLink]="'/admin/quiz/'+a.qid"> Update</button>
+        <button mat-raised-button class="btn" color="primary"> Appempts</button>
+        <button mat-raised-button class="btn" color="primary" (click)="deleteQuiz(a.qid)"> Delete</button>
+    </mat-expansion-panel>
+</mat-accordion>
+    <button mat-raised-button class="btn2" color="primary" routerLink="/admin/addArticle"> Add New Quiz</button>
+</mat-card>

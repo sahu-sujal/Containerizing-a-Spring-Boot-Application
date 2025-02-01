@@ -1,0 +1,32 @@
+<div class="bootstrap-wrapper">
+    <div class="container-fluid">
+        <mat-card class="mt20 mr20 mb20 card3">
+            <mat-card-title>
+                <h1 class="text-center mt20 head">Categories</h1>
+            </mat-card-title>
+
+            <mat-divider></mat-divider>
+        </mat-card>
+        <div class="row">
+            <div *ngFor="let c of category" class="col-md-4">
+                <mat-card class="mb20 card2">
+
+                    <mat-card-header>
+                        <div mat-card-avatar class="icone"></div>
+                        <mat-card-title>
+                           <span>{{c.title}}</span> 
+                        </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content class="truncate">
+                        {{c.description}}
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button color="primary" [routerLink]="'/user-dashboard/article/'+c.cid">
+                            <h3>View ALL Articles -></h3>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

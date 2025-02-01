@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+    background-color: #8b0303;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    overflow-x: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+.mt10{
+    margin-top: 10px !important;
+}
+.mr20{
+    margin-right: 20px !important;
+}
+
+.ml20{
+    margin-left: 20px !important;
+}
+
+.mt20{
+    margin-top: 20px !important;
+}
+
+.mb20{
+    margin-bottom: 20px !important;
+}
+.card{
+    width: 94%;
+    margin-left: 2%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(rgba(218, 206, 206, 0.644), rgba(212, 204, 204, 0.7) , rgba(214, 185, 185, 0.7) ,rgba(209, 194, 194, 0.7));
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.card3{
+    background-image: linear-gradient(rgba(218, 206, 206, 0.644), rgba(212, 204, 204, 0.7) , rgba(214, 185, 185, 0.7) ,rgba(209, 194, 194, 0.7));
+}

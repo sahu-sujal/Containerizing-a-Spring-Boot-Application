@@ -1,0 +1,25 @@
+<div class="bootstrap-wrapper">
+    <div class="row">
+        <mat-card class="card">
+            <mat-card-header>
+                <mat-card-title>
+                    <span>{{quiz.title}}</span>
+                </mat-card-title>
+                <mat-card-subtitle>
+                    {{quiz.description}}
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <div [innerHTML]="quiz.article" class="mt20 mb20" style="white-space: pre-wrap"></div>
+            </mat-card-content>
+            <mat-divider></mat-divider>
+            <div class="mt20 mb20 text-center">
+                <button mat-stroked-button  color="primary"> Maximun Marks:{{quiz.maxMarks}}</button>
+                <button mat-raised-button class="ml20" *ngIf="role=='ADMIN'" [routerLink]="'/admin/quizinstructions/'+quiz.qid" color="primary">Start</button>
+                <button mat-raised-button class="ml20" *ngIf="role=='NORMAL'" [routerLink]="'/user-dashboard/quizinstructions/'+quiz.qid" color="primary">Start</button> 
+                <button mat-stroked-button class="ml20" color="primary">No of Questions:{{quiz.numberOfQuestions}}</button>
+            </div>
+        </mat-card>
+    </div>
+</div>

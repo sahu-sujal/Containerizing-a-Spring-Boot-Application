@@ -1,0 +1,43 @@
+.card{
+    width: 96%;
+      margin-left: 1%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background-image: linear-gradient(rgba(218, 206, 206, 0.644), rgba(212, 204, 204, 0.7) , rgba(214, 185, 185, 0.7) ,rgba(209, 194, 194, 0.7));
+      }
+.example-header-image {
+    background-image: url('../../../../assets/Profile/article.png');
+    background-size: cover;
+  }
+.description{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.panel{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.644), rgba(194, 173, 173, 0.7));
+}
+.head{
+  margin-left: 110px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+span{
+  margin-left: 230px;
+}
+.btn{
+  margin-top: 15px;
+  margin-left: 2%;
+}
+.category{
+  margin-left: 20px;
+}
+.btn2{
+  width: 15%;
+  margin-left: 40%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}

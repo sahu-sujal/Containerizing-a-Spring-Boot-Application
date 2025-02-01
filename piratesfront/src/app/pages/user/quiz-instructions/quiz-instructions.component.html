@@ -1,0 +1,49 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <mat-card class="card">
+                        <mat-card-header>
+                            <mat-card-title>{{quizData.title}}</mat-card-title>
+                            <mat-card-subtitle>{{quizData.description}}</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-divider></mat-divider>
+                        <mat-card-content>
+                           
+                            <h1 class="mt10">Read the instructions of this page carefully</h1>
+                             <h3>How to play:</h3>
+                            <ol>
+                                <li><h3>Start the quiz - start the quiz by clicking on the 'Start Quiz' button.</h3></li>
+                                <li><h3>Answer the questions - Read each question carefully and select the correct answer from the options given.</h3></li>
+                                <li><h3>Submit your answers - Once you've answered all the questions, click on the 'Submit' button to submit your answers.</h3></li>
+                                <li><h3>Check your score - Your score will be displayed on the screen after you've submitted your answers.</h3></li>
+                                <li><h3>Time management - There are {{quizData.numberOfQuestions}} questions attemp each within 1 minute</h3></li>
+                                <li><h3>Play again - You can play the same quiz again or select a different quiz.</h3></li>
+                                <li><h3>Marks - Each Question Carries {{quizData.maxMarks/quizData.numberOfQuestions}} marks. (Note :- no negative marking for wrong ones)</h3></li>
+                                <li><h3>Pattern - All questions are MCQ type.</h3></li>
+                                <li><h3>Restricted Activity - Make sure you won't reload or back the Page.</h3></li>
+                            </ol>
+
+                            <h3>Tips for playing:</h3>
+                            <ul>
+                                <li><h3>Read the questions carefully before answering.</h3></li>
+                                <li><h3>If you don't know the answer, make an educated guess.</h3></li>
+                                <li><h3>Try to answer all the questions before submitting your answers.</h3></li>
+                                <li><h3>take your time and don't rush.</h3></li>
+                                <li><h3>Make sure you attemp all the questions</h3></li>
+                            </ul>
+                            <h3>Have fun and good luck with the CyberPirates!!</h3>
+                            <mat-divider></mat-divider>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <div class="mt10 mb10 btn">
+                                <button mat-stroked-button  color="primary"> Maximun Marks:{{quizData.maxMarks}}</button>
+                                <button mat-raised-button class="ml20" (click)="startquiz()"   color="primary">Start Quiz</button> 
+                                 <button mat-stroked-button class="ml20" color="primary">No of Questions:{{quizData.numberOfQuestions}}</button>
+                            </div>
+                        </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

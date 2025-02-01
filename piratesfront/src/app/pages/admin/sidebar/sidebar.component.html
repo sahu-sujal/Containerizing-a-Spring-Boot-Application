@@ -1,0 +1,13 @@
+<mat-card class="color" >
+    <mat-action-list>
+        <div mat-subheader>Menu</div>
+        <button mat-list-item routerLink="/admin"><mat-icon mat-list-icon class="icone">home</mat-icon> Home</button>
+        <button mat-list-item routerLink="/admin/profile"><mat-icon mat-list-icon  class="icone">account_circle</mat-icon> Profile</button>
+        <button mat-list-item routerLink="/admin/categories"><mat-icon mat-list-icon  class="icone">view_module</mat-icon> Categories</button>
+        <button mat-list-item routerLink="/admin/addcategories"><mat-icon mat-list-icon  class="icone">add_circle_outline</mat-icon> Add Categories</button>
+        <button mat-list-item routerLink="/admin/article"><mat-icon mat-list-icon  class="icone">quiz</mat-icon> Article</button>
+        <button mat-list-item routerLink="/admin/addArticle"><mat-icon mat-list-icon  class="icone">add_box</mat-icon> Add Article</button>
+        <button mat-list-item routerLink="/admin/contributers"><mat-icon mat-list-icon  class="icone">diversity_3</mat-icon> Contributers</button>
+        <button mat-list-item (click)="logout()"><mat-icon mat-list-icon  class="icone">logout</mat-icon> logout </button>
+    </mat-action-list>
+</mat-card>

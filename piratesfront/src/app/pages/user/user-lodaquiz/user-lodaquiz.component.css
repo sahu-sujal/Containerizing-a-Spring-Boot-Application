@@ -1,0 +1,27 @@
+.card2{
+    margin-right: 20px;
+    background-image: linear-gradient(rgba(218, 206, 206, 0.644), rgba(212, 204, 204, 0.7) , rgba(214, 185, 185, 0.7) ,rgba(209, 194, 194, 0.7));
+}
+.card3{
+    background-image: linear-gradient(rgba(218, 206, 206, 0.644), rgba(212, 204, 204, 0.7) , rgba(214, 185, 185, 0.7) ,rgba(209, 194, 194, 0.7));
+}
+
+.truncate{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+.icone{
+    background-image: url('../../../../assets/Profile/article.png');
+    background-size: cover;
+}
+.btn{
+    margin-top: 15px;
+    margin-left: 2%;
+  }
+.artitle{
+    font-size: medium;
+}

@@ -1,0 +1,39 @@
+<mat-toolbar class="color" color="primary">
+    <img src="../../../assets/logo.png" width="60" height="60">
+    <a *ngIf="!isLoggedIn" [routerLink]="'/'" mat-icon-button class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon">
+        Cyber<span>Pirates</span>
+    </a>
+    <a *ngIf="isLoggedIn" [routerLink]="'/admin'" mat-icon-button class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon">
+        Cyber<span>Pirates</span>
+    </a>
+
+    <span class="example-spacer"></span>
+
+    <a *ngIf="!isLoggedIn" [routerLink]="'/login'" mat-icon-button class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon">
+        <h3>Login</h3>
+    </a>
+
+    <a *ngIf="!isLoggedIn" [routerLink]="'/signup'" mat-icon-button class="example-icon favorite-icon mr20 ml20"
+        aria-label="Example icon-button with heart icon">
+        <h3>Signup</h3>
+    </a>
+
+    <a (click)="logout()" style="margin-right:50px;" *ngIf="isLoggedIn" mat-icon-button
+        class="example-icon favorite-icon mr20 ml20" aria-label="Example icon-button with heart icon">
+        <h3>Logout</h3>
+    </a>
+
+    <a style="margin-right:50px;" [routerLink]="'/user-dashboard/profile'" *ngIf="isLoggedIn && user && role=='NORMAL'" mat-icon-button class="example-icon favorite-icon  ml20"
+        aria-label="Example icon-button with heart icon">
+        <h3>{{user.username}}</h3>
+    </a>
+
+    <a style="margin-right:50px;" [routerLink]="'/admin/profile'" *ngIf="isLoggedIn && user && role=='ADMIN'" mat-icon-button class="example-icon favorite-icon  ml20"
+        aria-label="Example icon-button with heart icon">
+        <h3>{{user.username}}</h3>
+    </a>
+
+</mat-toolbar>

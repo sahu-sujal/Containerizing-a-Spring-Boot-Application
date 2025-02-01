@@ -1,0 +1,36 @@
+services:
+  frontend:
+    build: ./piratesfront/
+    ports:
+      - "4200:4200"
+    networks:
+      - pirates
+
+  backend:
+    build: ./PiratesBackend/
+    ports:
+      - "8080:8080"
+    depends_on:
+          database:
+            condition: service_healthy
+    networks:
+      - pirates
+      
+  database:
+    image: mysql:latest
+    ports: 
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 7898388516
+      MYSQL_DATABASE: exam
+    networks:
+      - pirates
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u root -p7898388516"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  pirates:
+    driver: bridge

@@ -1,0 +1,30 @@
+
+.head {
+   /* margin-left: 200px; */
+   text-align: center;
+}
+
+.panel {
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.644), rgba(194, 173, 173, 0.7));
+}
+
+
+.description {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+.btn {
+  margin-top: 15px;
+  margin-left: 2%;
+}
+
+.title{
+  margin-left: 370px;
+}

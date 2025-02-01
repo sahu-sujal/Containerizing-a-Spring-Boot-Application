@@ -1,0 +1,53 @@
+
+<mat-card class="card">
+<div *ngIf="user" class="global">
+    <h1 class="text-center">Welcome To Your Profile</h1>
+    <!-- {{user | json}} -->
+
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="container">
+                <div class="container text-center">
+                    <img class="mb10" src="../../../assets/Profile/DefaultProfile.png" class="resimg">
+
+                    <h2>{{user.firstName}} {{user.lastName}}</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <!--Table Details-->
+                        <!-- <mat-card class="tablecolor"> -->
+                            <table class="table text-center">
+
+                                <tr>
+                                    <td>Username</td>
+                                    <td>{{user.username}}</td>
+                                </tr>
+                                <tr>
+                                    <td>User Id</td>
+                                    <td>Pirates_{{user.id}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone no</td>
+                                    <td>{{user.phone}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>{{user.email}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Role</td>
+                                    <td>{{user.authorities[0].authority}}</td>
+                                </tr>
+                            </table>
+                        <!-- </mat-card> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-actions class="btn mt20 mb10">
+        <button mat-raised-button color="primary"> Update</button>
+        <button mat-raised-button color="primary" class="ml20"> Share</button>
+    </mat-card-actions>
+</div>
+</mat-card>

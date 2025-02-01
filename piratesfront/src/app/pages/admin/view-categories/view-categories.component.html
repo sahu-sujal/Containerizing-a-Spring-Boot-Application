@@ -1,0 +1,24 @@
+<mat-card class="card">
+    <mat-card-title class="head">All Categories</mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-accordion>
+        <mat-expansion-panel *ngFor="let c of categories" class="panel" (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false">
+
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <img src="../../../../assets/Profile/article.png" width="35px" height="35px" class="mr20">
+                    <span class="title">{{c.title}}</span>
+                </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-panel-description class="description">Description:- {{c.description}}</mat-panel-description>
+            <mat-divider></mat-divider>
+            <button mat-raised-button class="btn" color="primary" [routerLink]="'/admin/categories/'+c.cid"> Update</button>
+            <button mat-raised-button class="btn" color="primary" (click)="deleteCategory(c.cid)"> Delete</button>
+        </mat-expansion-panel>
+    </mat-accordion>
+    <div class="container text-center">
+        <button mat-raised-button class=" mb20 mt20" color="primary" routerLink="/admin/addcategories"> Add Category</button>
+    </div>
+</mat-card>

@@ -1,0 +1,39 @@
+.resimg{
+    max-width: 150px;
+    max-height: 150px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+.table tr{
+    border: 1px solid black;
+}
+.table tr td{
+    padding: 15px 10px;
+    border: .5px solid #03030365;
+    font-size: medium;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+.btn{
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 10px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+
+.global{
+    color: rgb(0, 0, 0);
+}
+h1{
+    font-size: 30px;
+    margin-top: 10px;
+}
+

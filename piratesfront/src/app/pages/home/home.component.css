@@ -1,0 +1,206 @@
+.white {
+    color: white;
+}
+
+.mt100 {
+    padding-top: 140px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding-bottom: 100px;
+
+}
+
+span {
+    color: #ff6347;
+}
+
+.heading {
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    ;
+    font-size: 20px;
+    background-color: black;
+    width: 40%;
+    background-size: cover;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    text-align: left;
+    font-weight: 400;
+
+}
+
+.subhead {
+    margin-top: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.Abstract {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.img {
+    margin-left: 100px;
+
+}
+
+.text {
+    margin-top: 30px;
+
+}
+
+.color {
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.button {
+    font-size: 18px;
+    font-weight: bold;
+    background: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #9b0303;
+    text-decoration: none;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    box-shadow: 5px 5px 10px rgb(236, 125, 125);
+    -webkit-transform: scale(1.05);
+
+}
+
+/*--Courses we--*/
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.para {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 22%;
+    background: #0000008e;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+.course-col:hover,
+.course-col:focus,
+.course-col:active {
+    box-shadow: 0 0 20px rgb(236, 125, 125);
+    -webkit-transform: scale(1.1);
+
+}
+
+
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+
+}
+
+/*--contact us--*/
+.cta {
+    margin: 70px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(77, 32, 32, 0.603), rgba(185, 70, 70, 0.7)), url(../../../assets/anonymous-hacker-data-breach-5k-6000x4004-7.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 30px;
+}
+.cta:hover,
+.cta:focus,
+.cta:active {
+    box-shadow: 0 0 10px rgb(236, 125, 125);
+    -webkit-transform: scale(1.05);
+
+}
+
+.cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px) {
+    .cta h1 {
+        font-size: 24px;
+    }
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5% ;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
