@@ -28,7 +28,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'deploy using docker compose'
-                sh 'docker compose build --no-cache'
+                sh 'docker compose build --no-cache -d'
             }
         }
     }
