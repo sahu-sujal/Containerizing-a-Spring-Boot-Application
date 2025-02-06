@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class QuestionService {
 
-  baseurl ='http://127.0.0.1:8080/';
+  baseurl ='http://127.0.0.1:8082/';
 
   constructor(private _http:HttpClient) { }
 

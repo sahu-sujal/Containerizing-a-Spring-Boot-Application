@@ -18,7 +18,7 @@ pipeline {
         stage('Push') {
             steps {
                 echo "Pushing Docker Images"
-                withCredentials([usernamePassword(credentialsId: 'Dockerhub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+                withCredentials([usernamePassword(credentialsId: 'docker', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
                      sh 'docker login -u $USERNAME -p $PASSWORD'
                      sh 'docker push sujaldev2004/piratesbackend:latest'
                      sh 'docker push sujaldev2004/piratesfrontend:latest'
