@@ -1,18 +1,22 @@
 services:
   frontend:
-    image: sujaldev2004/piratesfrontend:latest
+    build:
+      context: ./piratesfront   # Path to your frontend Dockerfile
+      dockerfile: Dockerfile
     ports:
       - "80:4200"
     networks:
       - pirates
 
   backend:
-    image: sujaldev2004/piratesbackend:latest
+    build:
+      context: ./PiratesBackend    # Path to your backend Dockerfile
+      dockerfile: Dockerfile
     ports:
       - "8082:8080"
     depends_on:
-          database:
-            condition: service_healthy
+      database:
+        condition: service_healthy
     networks:
       - pirates
       
